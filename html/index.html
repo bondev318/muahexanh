@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta  charset="utf-8">
+    <title>AAAA</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel=" stylesheet" type="text/css" href="...css/file.css" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script  type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/file.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="page-header" >
+                <nav class="navbar navbar-default" >
+                    <div class=" col-md-4 col-sm-4" >
+                        <img src="../img/logo.PNG">
+                    </div>
+                    <div class=" col-md-8 col-sm-8 text-center" >
+                        <h2>BỘ CÔNG THƯƠNG TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h2>
+                        <h4 class="text-danger">ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h4>
+                    </div>
+                </nav>
+                <nav class="navbar bg-info" >
+                    <ul class="nav navbar-nav" >
+                        <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+                        <li><a href="#">TỔ CHỨC</a></li>
+                        <li><a href="#">HÌNH ẢNH</a></li>
+                        <li><a href="#" id="myBtn" data-toggle="modal" data-target="#myModal">HOẠT ĐỘNG</a></li>
+                    </ul>
+                </nav> 
+            </header>
+        </div>
+
+        <div class="row" >
+            <section class="col-md-7 col-sm-7" >
+                <img src="../img/ngayhoithanhnien.JPG" class="img-circle">
+            </section>
+            <aside class="col-md-5 col-sm-5" >
+                <h2 class="text-warning">TIN NỔI BẬT</h2>
+                <ol type="I" class="list-group-item-info">
+                    <li><a href="#">Mùa hè xanh</a></li>
+                    <li><a href="#">Thanh niên tình nguyện</a></li>
+                    <li><a href="#">Tấm lòng vàng</a></li>
+                    <li><a href="#">Hiến máu nhân đạo</a></li>
+                    <li><a href="#">Bảo vệ môi trường sạch</a></li>
+                    <li><a href="#">Thi đua lập thành tích chào mừng 26/3</a></li>
+                </ol>
+            </aside>
+        </div>
+
+        <div class="col-md-12">
+            <section class="table-responsive">
+                <table class="table table-striped">
+                    
+                        <h3 class="text-center text-danger">DANH SÁCH SINH VIÊN ĐĂNG KÝ MÙA HÈ XANH</h3>
+                    
+                        <tr>
+                            <th>Mã Sinh Viên</th>
+                            <th>Họ Tên</th>
+                            <th>Ngày Đăng Ký</th>
+                            <th>Email</th>
+                            <th>Số Điện Thoại</th>
+                        </tr>
+                </table>
+			</section>
+        <div class="row">   
+            <footer class="modal-footer bg-primary">
+            @ 2020 Đoàn thanh niên - Trường Đại học Công Nghiệp Thành Phố Hồ Chí Minh </footer> 
+        </div>
+    	</div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button"class="close" data-dismiss="modal">X</button>
+                    <h1 style="text-align: center">THÔNG TIN TOUR</h1>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div id="thongbao" class="text-danger" style="text-align: center"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtMa" class="control-label col-xs-3">MSSV</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="" id="txtMa" placeholder="Nhập theo mẫu: 123456789" />
+                                <span id="tbMa" class="text-danger">*</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="txtHT" class="control-label col-xs-3">Họ và tên</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="" id="txtHT" placeholder="Nhập theo mẫu: Le Quang Nhat" />
+                                <span id="tbHT" class="text-danger">*</span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="txtNgay" class="control-label col-xs-3">Ngày đăng ký</label>
+                            <div class="col-md-9">
+                                <input type="date" class="form-control" id="txtNgay" />
+                                <span id="tbNgay" class="text-danger">*</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtEmail" class="control-label col-xs-3">Email</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="" id="txtEmail" placeholder="Nhập Email" />
+                                <span id="tbEmail" class="text-danger">*</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtSDT" class="control-label col-xs-3">Telephone</label> 
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtSDT" placeholder="Số điện thoại" >
+                                <span id="tbSDT" class="text-danger">*</span>
+                            </div>
+						</div>    
+                       
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnSave" class="btn btn-success btn-block">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
